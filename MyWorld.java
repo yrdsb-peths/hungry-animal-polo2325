@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * The World our hero lives in.
  * 
  * @author Marco Yu
- * @version September 19 2024
+ * @version September 2024
  */
 public class MyWorld extends World
 {
@@ -20,5 +20,8 @@ public class MyWorld extends World
         
         Elephant elephant  = new Elephant();
         addObject(elephant, 300, 200);
+        
+        Apple apple = new Apple();
+        addObject(apple, 300, 0);
     }
 }
