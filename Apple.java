@@ -8,13 +8,35 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Apple extends Food
 {
+    /**
+     * Constructor for Apple
+     */
     public Apple()
     {
         super(2);
     }
     
-    public void act()
+    /**
+     * Make apple fall down
+     */
+    public void foodFall()
     {
-        setLocation(getX(), getY() + 2);
+        int rand = Greenfoot.getRandomNumber(3);
+        
+        //make apple occasionally speeds up
+        if(rand == 1)
+        {
+            speed = 7;
+        }
+        else
+        {
+            speed = 3;
+        }
+        
+        // apple falls downward
+        int x = getX();
+        int y = getY() + speed;
+        setLocation(x, y);
+        
     }
 }

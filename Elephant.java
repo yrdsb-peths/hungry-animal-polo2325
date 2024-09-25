@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Elephant extends Actor
 {
+    //initilizes variables
     GreenfootSound elephantSound = new GreenfootSound("elephantSound.mp3");
     GreenfootImage[] idleRight = new GreenfootImage[8];
     GreenfootImage[] idleLeft = new GreenfootImage[8];
@@ -66,6 +67,7 @@ public class Elephant extends Actor
     
     public void act()
     {
+        //move elephant
         if(Greenfoot.isKeyDown("left"))
         {
             move(-10);
