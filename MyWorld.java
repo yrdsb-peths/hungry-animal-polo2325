@@ -56,14 +56,19 @@ public class MyWorld extends World
     }
     
     /**
-     * Create a new apple at random location at top of screen
+     * Create new food at random location at top of screen
      */
-    public void createApple()
-    {
-        Apple apple = new Apple();
-        apple.setSpeed(level);
+    public void spawnFood() {
+        int rand = Greenfoot.getRandomNumber(2);
+        Food food;
+        
+        if(rand == 0) {
+            food = new Apple();
+        } else {
+            food = new Banana();
+        }
+        
         int x = Greenfoot.getRandomNumber(600);
-        int y = 0;
-        addObject(apple, x, y);
+        addObject(food, x, 0);
     }
 }
