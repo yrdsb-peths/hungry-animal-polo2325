@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Title Screen.
  * 
  * @author Marco Yu
- * @version 24 September 2024
+ * @version September 2024
  */
 public class TitleScreen extends World
 {
