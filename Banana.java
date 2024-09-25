@@ -12,4 +12,9 @@ public class Banana extends Food
     {
         super(4);
     }
+    
+    public void act()
+    {
+        setLocation(getX(), getY() + 4);
+    }
 }

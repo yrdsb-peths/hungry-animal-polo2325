@@ -9,6 +9,7 @@
 public class MyWorld extends World
 {
     public int score = 0;
+    public int numFoodEaten = 0;
     Label scoreLabel;
     int level = 1;
     
@@ -29,7 +30,7 @@ public class MyWorld extends World
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
         
-        createApple();
+        spawnFood();
     }
     
     /**
@@ -39,20 +40,6 @@ public class MyWorld extends World
     {
         Label gameOverLabel = new Label("Game Over", 100);
         addObject(gameOverLabel, 300, 200);
-    }
-    
-    /**
-     * Increase score
-     */
-    public void increaseScore()
-    {
-        score++;
-        scoreLabel.setValue(score);
-        
-        if(score % 5 == 0)
-        {
-            level++;
-        }
     }
     
     /**

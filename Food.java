@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public abstract class Food extends Actor
 {
     int value;
+    int speed = 1;
     
     /**
      * Constructor for food
@@ -17,8 +18,6 @@ public abstract class Food extends Actor
     {
         this.value = value;
     }
-    
-    int speed = 1;
     
     public void act()
     {
@@ -38,6 +37,6 @@ public abstract class Food extends Actor
     
     public void setSpeed(int spd)
     {
-        speed = spd;
+        this.speed = spd;
     }
 }
