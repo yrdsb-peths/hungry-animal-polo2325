@@ -21,16 +21,16 @@ public class Apple extends Food
      */
     public void foodFall()
     {
-        int rand = Greenfoot.getRandomNumber(3);
+        int rand = Greenfoot.getRandomNumber(7);
         
         //make apple occasionally speeds up
         if(rand == 1)
         {
-            speed = 7;
+            speed = 9;
         }
         else
         {
-            speed = 3;
+            speed = 1;
         }
         
         // apple falls downward
