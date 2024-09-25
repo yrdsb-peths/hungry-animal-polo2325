@@ -1,20 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Food for our elephant
+ * food for elephant
  * 
  * @author Marco Yu
- * @version Septmber 2024
+ * @version September 2024
  */
-public class Apple extends Food
+public class Banana extends Food
 {
-    public Apple()
+    public Banana()
     {
-        super(2);
+        super(4);
     }
     
     public void act()
     {
-        setLocation(getX(), getY() + 2);
+        setLocation(getX(), getY() + 4);
     }
 }
