@@ -71,4 +71,12 @@ public class MyWorld extends World
         int x = Greenfoot.getRandomNumber(600);
         addObject(food, x, 0);
     }
+    
+    /**
+     * Increase score
+     */
+    public void increaseScore(int value) {
+        score += value;
+        scoreLabel.setValue(score);
+    }
 }
