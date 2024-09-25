@@ -8,6 +8,7 @@
  */
 public class MyWorld extends World
 {
+    //initilizes variables
     public int score = 0;
     public int numFoodEaten = 0;
     Label scoreLabel;

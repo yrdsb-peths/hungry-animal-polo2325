@@ -13,8 +13,26 @@ public class Banana extends Food
         super(4);
     }
     
-    public void act()
+    /**
+     * Make banana fall down
+     */
+    public void foodFall()
     {
-        setLocation(getX(), getY() + 4);
+        int rand = Greenfoot.getRandomNumber(5);
+        
+        // make banana occasionally go up
+        if(rand == 1) 
+        {
+            speed = -4;
+        }
+        else
+        {
+            speed = 3;
+        }
+        
+        // make banana falls downward
+        int x = getX();
+        int y = getY() + speed;
+        setLocation(x, y);
     }
 }
